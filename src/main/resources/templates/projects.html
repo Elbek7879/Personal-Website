@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Elbek Abduraximov</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-code me-2"></i><span class="fw-bold">ELBEK</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-resume" href="#" download>
+                        <i class="fas fa-download me-2"></i>RESUME
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header" style="padding: 150px 0 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold mb-3">My Projects</h1>
+        <p class="lead">Explore my portfolio of completed projects</p>
+    </div>
+</section>
+
+<!-- Filter Buttons -->
+<section class="py-4" style="background: var(--light-bg);">
+    <div class="container">
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th me-2"></i>All Projects
+            </button>
+            <button class="filter-btn" data-filter="backend">
+                <i class="fas fa-server me-2"></i>Backend
+            </button>
+            <button class="filter-btn" data-filter="fullstack">
+                <i class="fas fa-code me-2"></i>Full Stack
+            </button>
+            <button class="filter-btn" data-filter="api">
+                <i class="fas fa-exchange-alt me-2"></i>API
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4" id="projectsGrid">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="backend api">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop" alt="E-Commerce API">
+                        <div class="project-overlay">
+                            <a href="https://github.com/yourusername/ecommerce-api" class="btn btn-light btn-sm me-2" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="badge bg-success mb-2">Featured</span>
+                        <h5>E-Commerce Backend API</h5>
+                        <p>This project provides the backend for an e-commerce system.
+                            It exposes REST APIs for managing products and orders.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Spring Boot 3.x</span>
+                            <span class="tech-badge">PostgreSQL, H2, MySQL</span>
+                            <span class="tech-badge">JUnit 5 & Mockito</span>
+                            <span class="tech-badge">Spring Data JPA</span>
+                        </div>
+                        <div class="project-footer mt-3">
+                            <small class="text-muted">
+                                <i class="far fa-calendar me-1"></i>Dec 2025
+                            </small>
+                            <div class="project-stats">
+                                <span class="me-3"><i class="far fa-star text-warning me-1"></i>48</span>
+                                <span><i class="fas fa-code-branch me-1"></i>12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <!-- Project 3 -->
+
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="backend">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Banking System">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-light btn-sm me-2" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h5>Banking Management System</h5>
+                        <p>Secure banking application with transaction processing, account management, loan system, and comprehensive audit logging.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Spring Security</span>
+                        </div>
+                        <div class="project-footer mt-3">
+                            <small class="text-muted">
+                                <i class="far fa-calendar me-1"></i>Oct 2025
+                            </small>
+                            <div class="project-stats">
+                                <span class="me-3"><i class="far fa-star text-warning me-1"></i>22</span>
+                                <span><i class="fas fa-code-branch me-1"></i>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="backend">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="Microservices">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-light btn-sm me-2" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h5>Microservices Architecture</h5>
+                        <p>Enterprise-grade microservices with Spring Cloud, service discovery, API gateway, circuit breaker, and distributed tracing.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Spring Cloud</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">RabbitMQ</span>
+                        </div>
+                        <div class="project-footer mt-3">
+                            <small class="text-muted">
+                                <i class="far fa-calendar me-1"></i>Aug 2024
+                            </small>
+                            <div class="project-stats">
+                                <span class="me-3"><i class="far fa-star text-warning me-1"></i>42</span>
+                                <span><i class="fas fa-code-branch me-1"></i>15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2025 Elbek Abduraximov. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .filter-btn {
+        padding: 10px 25px;
+        background: var(--dark-bg);
+        color: var(--text-light);
+        border: 2px solid transparent;
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: var(--gradient);
+        border-color: transparent;
+        transform: translateY(-2px);
+    }
+
+    .project-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .project-stats {
+        display: flex;
+        align-items: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // Filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            projectItems.forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'scale(1)';
+                    }, 10);
+                } else {
+                    const category = item.getAttribute('data-category');
+                    if (category.includes(filter)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

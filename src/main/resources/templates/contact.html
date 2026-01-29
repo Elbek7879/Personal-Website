@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Elbek Abduraximov</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-code me-2"></i><span class="fw-bold">ELBEK</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn-resume" href="files/Elbek Abduraximov CV.pdf" download="Elbek_Abduraximov_Resume.pdf">
+                        <i class="fas fa-download me-2"></i>RESUME
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="page-header" style="padding: 150px 0 100px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold mb-3">Get In Touch</h1>
+        <p class="lead">Have a project in mind? Let's work together!</p>
+    </div>
+</section>
+
+<!-- Contact Info Cards -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4 mb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h5>Email Me</h5>
+                    <p class="text-muted mb-0">abduraximovelbek7879@gmail.com</p>
+                    <a href="mailto:abduraximovelbek7879@gmail.com" class="stretched-link"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h5>Call Me</h5>
+                    <p class="text-muted mb-0">+998 88 750 79 78</p>
+                    <a href="tel:+998887507978" class="stretched-link"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h5>Visit Me</h5>
+                    <p class="text-muted mb-0">Tashkent, Uzbekistan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form & Map -->
+<section class="py-5" style="background: var(--light-bg);">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="contact-form-wrapper">
+                    <h2 class="mb-4">Send Me a <span class="text-gradient">Message</span></h2>
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Your Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Your Message *</label>
+                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="formMessage" class="mt-3"></div>
+                </div>
+            </div>
+
+            <!-- Social Links & Additional Info -->
+            <div class="col-lg-5">
+                <div class="contact-sidebar">
+                    <h3 class="mb-4">Let's Connect</h3>
+                    <p class="text-muted mb-4">
+                        I'm always interested in hearing about new projects and opportunities.
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+
+                    <div class="social-links-large mb-4">
+                        <a href="https://github.com/Elbek7879" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h6>GitHub</h6>
+                                <p class="text-muted small mb-0">Elbek7879</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/elbek-abduraximov-0a0133346/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h6>LinkedIn</h6>
+                                <p class="text-muted small mb-0">Elbek Abduraximov</p>
+                            </div>
+                        </a>
+
+                        <a href="https://t.me/elbek_abduraximov" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h6>Telegram</h6>
+                                <p class="text-muted small mb-0">Elbek Abduraximov</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="status-indicator"></div>
+                            <h5 class="mb-0">Available for Hire</h5>
+                        </div>
+                        <p class="text-muted mb-0">
+                            I'm currently available for freelance work and open to discussing new opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2025 Elbek Abduraximov </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .contact-info-card {
+        background: var(--dark-bg);
+        padding: 40px 30px;
+        border-radius: 15px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-info-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(99,102,241,0.2);
+        border-color: var(--primary-color);
+    }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--gradient);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        margin: 0 auto 20px;
+    }
+
+    .contact-form-wrapper {
+        background: var(--dark-bg);
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .form-control {
+        background: var(--light-bg);
+        border: 1px solid rgba(255,255,255,0.1);
+        color: var(--text-light);
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    .form-control:focus {
+        background: var(--light-bg);
+        border-color: var(--primary-color);
+        color: var(--text-light);
+        box-shadow: 0 0 0 0.2rem rgba(99,102,241,0.25);
+    }
+
+    .form-label {
+        color: var(--text-light);
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .contact-sidebar {
+        background: var(--dark-bg);
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid rgba(255,255,255,0.1);
+        height: 100%;
+    }
+
+    .social-links-large {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: var(--light-bg);
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.1);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: var(--text-light);
+    }
+
+    .social-link:hover {
+        background: var(--gradient);
+        transform: translateX(10px);
+        border-color: transparent;
+    }
+
+    .social-link i {
+        font-size: 2rem;
+        width: 50px;
+    }
+
+    .availability-card {
+        background: var(--light-bg);
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .status-indicator {
+        width: 12px;
+        height: 12px;
+        background: #10b981;
+        border-radius: 50%;
+        margin-right: 10px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // Enhanced form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (!name || !email || !message) {
+            showMessage('Please fill in all required fields!', 'danger');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            showMessage('Please enter a valid email address!', 'danger');
+            return;
+        }
+
+        // Simulate sending (replace with actual API call)
+        const btn = this.querySelector('button[type="submit"]');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+        btn.disabled = true;
+
+        setTimeout(() => {
+            showMessage('Message sent successfully! I will get back to you soon.', 'success');
+            this.reset();
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }, 2000);
+    });
+
+    function showMessage(text, type) {
+        const messageDiv = document.getElementById('formMessage');
+        messageDiv.innerHTML = `
+                <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'} me-2"></i>
+                    ${text}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            `;
+
+        setTimeout(() => {
+            messageDiv.innerHTML = '';
+        }, 5000);
+    }
+
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
+</body>
+</html>
