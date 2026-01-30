@@ -1,6 +1,5 @@
 package org.example.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,35 +7,34 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "projects")
+@Table(name = "contacts")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Project {
+public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String title;
-
-    @Column(columnDefinition = "TEXT")
-    private String description;
+    private String name;
 
     @Column(nullable = false)
-    private String technologies;
+    private String email;
 
-    private String githubUrl;
+    private String phone;
 
-    private String demoUrl;
+    private String subject;
 
-    private String imageUrl;
-
-    private boolean featured = false;
+    @Column(columnDefinition = "TEXT", nullable = false)
+    private String message;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
+
+    @Column(name = "is_read")
+    private boolean isRead = false;
 
     @PrePersist
     public void prePersist() {
